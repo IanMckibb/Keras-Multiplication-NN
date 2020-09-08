@@ -1,2 +1,2 @@
-# RNN-Music_Test
-RNN in Keras to generate music.
+# Keras-Multiplication-NN
+Simple NN in Keras to predict multiplication of 2 integers.
