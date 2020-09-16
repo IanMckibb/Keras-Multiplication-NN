@@ -16,6 +16,8 @@ y = input_data[:, 2]
 X_test = test_data[:, :2]
 y_test = test_data[:, 2]
 
+print(X.shape)
+
 model = Sequential()
 model.add(Dense(12, input_dim=2, activation='relu'))
 model.add(Dense(8, activation='relu'))
@@ -25,6 +27,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 # fit the keras model on the dataset
 model.fit(X, y, epochs=50, batch_size=512)
 # evaluate the keras model
+
 _, accuracy = model.evaluate(X, y)
 
 model.summary()
